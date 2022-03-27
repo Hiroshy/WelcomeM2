@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="adobe" translate="label" sortOrder="999">
+            <label>adobe</label>
+        </tab>
+        <section id="welcomemessage" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Mensaje de Bienvenida</label>
+            <tab>adobe</tab>
+            <resource>Adobe_WelcomeMessage::config_adobe_welcomemessage</resource>
+            <group id="adobewelcomemessage" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Configura tu mensaje de Bienvenida</label>
+                <field id="enable" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="mensaje" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Mensaje</label>
+                    <comment>Insert Welcome Message</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

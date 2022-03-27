@@ -1,0 +1,15 @@
+<!--
+/**
+ * Copyright © Adobe, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ * Dev: Wissell B. Hiroshy Pérez Díaz | diaz201819@gmail.com
+ */
+-->
+<?php
+    /* @var $block \Adobe\WelcomeMessage\Block\Welcome */
+    if ($block->isEnable()): ?>
+    <div class="container-fluid bg-dark text-light text-center py-1">
+        <p class="lead m-0"> <?= $block->getMessage() ?> </p>
+    </div>
+<?php
+    endif; ?>
