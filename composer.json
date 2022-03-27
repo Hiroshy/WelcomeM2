@@ -1,0 +1,22 @@
+{
+    "name": "adobe/module-welcomemessage",
+    "description": "Welcome Message In Magento 2.4.1 Community Edition",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Wissell Brayan Hiroshy Pérez Díaz",
+            "email": "diaz201819@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Adobe\\WelcomeMessage\\": ""
+        }
+    }
+}
